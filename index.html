@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Perry Mensah</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .hero-section {
+      background-image: url('./public/images/Intsense_copy2.PNG');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .nav-bar h1 {
+      color: white;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .main-nav > .dropdown,
+    .main-nav > a {
+      margin-left: 1.5rem;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+    }
+    .main-nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+    .main-nav a:hover::after {
+      width: 100%;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown > a::after {
+      content: ' ▼';
+      font-size: 0.7em;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: black;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 10;
+      flex-direction: column;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="nav-bar">
+      <h1>Perry Mensah</h1>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <a href="videos.html">VIDEOS</a>
+          <div class="dropdown-content">
+            <a href="intense.html">INTENSE</a>
+            <a href="block.html">BIG BLOCK</a>
+            <a href="jumper.html">CLEAN JUMPER</a>
+            <a href="aso.html">SNEAK PEEK</a>
+            <a href="practice.html">PRACTICE</a>
+          </div>
+        </div>
+        <a href="about.html">ABOUT</a>
+        <a href="about.html#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <footer>
+    <p>© Perry Mensah. All rights reserved.</p>
+  </footer>
+</body>
+</html>

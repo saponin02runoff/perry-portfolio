@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Perry Mensah</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: black;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+    }
+    .main-nav > .dropdown,
+    .main-nav > a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      position: relative;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown > a::after {
+      content: ' ▼';
+      font-size: 0.7em;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: black;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 10;
+      flex-direction: column;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-section img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    .contact-section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact-section a {
+      color: #000;
+      text-decoration: none;
+    }
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Perry Mensah</a></h1>
+    <nav class="main-nav">
+      <div class="dropdown">
+        <a href="videos.html">VIDEOS</a>
+        <div class="dropdown-content">
+          <a href="intense.html">INTENSE</a>
+          <a href="block.html">BIG BLOCK</a>
+          <a href="jumper.html">CLEAN JUMPER</a>
+          <a href="aso.html">ASO SNEAK PEEK</a>
+          <a href="practice.html">PRACTICE</a>
+        </div>
+      </div>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="about-section" style="flex-direction: row; text-align: left;">
+  <div style="flex: 1; padding-right: 2rem;">
+    <h2>About</h2>
+    <p>
+      My name is Perry Mensah, and I’m a passionate visual storyteller studying Media & Communications at Texas Tech University. With a sharp eye for detail and a deep love for creative expression, I bring moments to life through film and photography.
+    </p>
+    <p>
+      Whether I’m capturing electrifying sports action, vibrant student events, or raw behind-the-scenes footage, I strive to craft stories that resonate. I believe every frame has power, and every project is an opportunity to connect people through emotion, rhythm, and vision.
+    </p>
+    <p>
+      From directing and shooting to editing and final delivery, I commit to bringing energy, creativity, and professionalism to every stage of the process.
+    </p>
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="./public/images/me.jpg" alt="Perry Mensah" style="width: 280px; height: auto; border-radius: 6px;">
+  </div>
+</section>
+
+  
+
+
+</body>
+</html>

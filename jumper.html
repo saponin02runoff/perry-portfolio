@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLEAN JUMPER | Perry Mensah</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    header {
+      background-color: black;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      margin: 0;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+    }
+    .main-nav > .dropdown,
+    .main-nav > a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      position: relative;
+    }
+    .main-nav a:hover::after {
+      width: 100%;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown > a::after {
+      content: ' ▼';
+      font-size: 0.7em;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: black;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 10;
+      flex-direction: column;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+    .video-detail {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .video-detail video {
+      width: 100%;
+      max-height: 450px;
+    }
+    .video-detail h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .video-detail p {
+      margin-top: 1rem;
+      color: #555;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="color: white; text-decoration: none;">Perry Mensah</a></h1>
+    <nav class="main-nav">
+      <div class="dropdown">
+        <a href="videos.html">VIDEOS</a>
+        <div class="dropdown-content">
+          <a href="intense.html">INTENSE</a>
+          <a href="block.html">BIG BLOCK</a>
+          <a href="jumper.html">CLEAN JUMPER</a>
+          <a href="aso.html">SNEAK PEEK</a>
+          <a href="practice.html">PRACTICE</a>
+        </div>
+      </div>
+      <a href="about.html">ABOUT</a>
+      <a href="about.html#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="video-detail">
+    <h2>CLEAN JUMPER</h2>
+    <video controls poster="./public/images/shoot_thumbnail.jpg">
+      <source src="./public/videos/shoot.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>If you have knee pain, watch this vid.</p>
+  </section>
+
+  <footer>
+    <p>© Perry Mensah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
